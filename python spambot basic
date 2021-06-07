@@ -1,0 +1,19 @@
+
+import pyautogui
+import time
+
+msg = input("What message would you like to spam?")
+n = input("how many times would you like to spam this message? : ")
+
+print("t minus")
+
+count = 5
+while(count != 0):
+	print(count)
+	time.sleep(1)
+	count -= 1
+
+print("LETS DO THIS!!!!!!")
+
+for i in range(0,int(n)):
+	pyautogui.typewrite(msg + '\n')
